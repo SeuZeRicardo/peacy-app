@@ -7,7 +7,7 @@ if (typeof files == 'undefined') {
   files.push('./');
 }
 
-var CACHE_NAME = 'andre-mendes';
+var CACHE_NAME = 'Peacy App';
 
 self.addEventListener('activate', function(event) {
   console.log('[SW] Activate');
