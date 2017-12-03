@@ -43,20 +43,6 @@
   <meta name='twitter:image' content='https://seuzericardo.github.io/peacy-site/images/touch/Airhorner_192.png'>
   <meta name='twitter:creator' content='@seuzericardo'>
   <link rel='stylesheet' href='styles/main.css'>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js', {
-          scope: '/'
-        })
-        .then(function (registration) {
-          console.log('Service Worker Registered');
-        });
-
-      navigator.serviceWorker.ready.then(function (registration) {
-        console.log('Service Worker Ready');
-      });
-    }
-  </script>
 </head>
 
 <body>
