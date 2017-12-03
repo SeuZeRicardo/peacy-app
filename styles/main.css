@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'clear_sans_lightregular';
+  src: url('webfonts/clearsans_light_macroman/ClearSans-Light-webfont.eot');
+  src: url('webfonts/clearsans_light_macroman/ClearSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/clearsans_light_macroman/ClearSans-Light-webfont.woff2') format('woff2'), url('webfonts/clearsans_light_macroman/ClearSans-Light-webfont.woff') format('woff'), url('webfonts/clearsans_light_macroman/ClearSans-Light-webfont.ttf') format('truetype'), url('webfonts/clearsans_light_macroman/ClearSans-Light-webfont.svg#clear_sans_lightregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'clear_sans_bold';
+  src: url('webfonts/clearsans_bold_macroman/ClearSans-Bold-webfont.eot');
+  src: url('webfonts/clearsans_bold_macroman/ClearSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/clearsans_bold_macroman/ClearSans-Bold-webfont.woff2') format('woff2'), url('webfonts/clearsans_bold_macroman/ClearSans-Bold-webfont.woff') format('woff'), url('webfonts/clearsans_bold_macroman/ClearSans-Bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'clear_sans_lightregular';
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-selection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'clear_sans_lightregular';
+  color: #404141;
+  font-size: 17px;
+  width: 100vw;
+}
+
+
+/* 
+COMEÇO DA Pagina de reprodução de Música 
+*/
+
+.music-page {
+  background-color: #54C4C6;
+}
+
+.v-align {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-control {
+  max-width: 50px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.button-action {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0 5%;
+}
+
+
+/* 
+FIM  DA Pagina de reprodução de Música 
+*/
+
+
+/* 
+COMEÇO DA Pagina de MENU INICIAL 
+*/
+
+.header-sub {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.header-sub .logo img {
+  width: 70px;
+  margin: 30px 0;
+}
+
+.simple-item {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.first-menu ul {
+  margin-left: -20px;
+}
+
+.simple-item img {
+  width: 40px;
+  padding-right: 15px;
+}
+
+.simple-item .text {
+  font-size: 25px;
+  font-family: 'clear_sans_bold';
+  text-transform: uppercase;
+  color: #404141;
+}
+
+
+/* 
+FIM DA Pagina de MENU INICIAL 
+*/
+
+
+/* 
+COMEÇO DA Pagina de SELEÇÃO DE MÚSICA 
+*/
+
+.simple-item .beginning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beginning .text__title {
+  color: #404141;
+  padding-right: 10px;
+}
+
+.beginning .text__artist {
+  color: #B1B1B1;
+  padding-right: 10px;
+}
+
+.music-item {
+  justify-content: space-between;
+}
+
+
+/* 
+FIM DA Pagina de MENU INICIAL 
+*/
