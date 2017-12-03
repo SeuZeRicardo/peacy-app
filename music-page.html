@@ -46,7 +46,7 @@
 </head>
 
 <body class="music-page">
-  <audio id="demo" src="/sounds/demo.mp3" autoplay preload></audio>
+  <audio id="demo" src="sounds/demo.mp3" autoplay preload></audio>
   <div class="v-align">
     <div class="music-background">
       <button class="button-action" onclick="document.getElementById('demo').play()">
@@ -57,26 +57,6 @@
       </button>
     </div>
   </div>
-  <!-- <div id='installer'>
-      <button class='button'>Install</button>
-      <span class='tooltip'></span>
-    </div> -->
-  <!-- <script src=/scripts/main.min.js></script> -->
   <script src=/scripts/main.js></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js', {
-          scope: '/'
-        })
-        .then(function (registration) {
-          console.log('Service Worker Registered');
-        });
-
-      navigator.serviceWorker.ready.then(function (registration) {
-        console.log('Service Worker Ready');
-      });
-    }
-  </script>
 </body>
-
 </html>
