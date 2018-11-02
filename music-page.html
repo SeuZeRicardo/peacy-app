@@ -57,11 +57,8 @@
     </div>
   </div>
   
-  <!-- O Arquivo main.js esta minificadas para uma maior performance na Web -->
-  <!-- <script src=scripts/main.js></script> -->
-
   <!-- Nessa parte do codigo registra o Service Worker -->
-<script>
+  <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js', {
           scope: '/'
