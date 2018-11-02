@@ -1,14 +1,7 @@
-var files = [];
-
-// dev only
-if (typeof files == 'undefined') {
-  var files = [];
-} else {
-  files.push('./');
-}
-
+// Cria o nome do Cache no navegador com o nome da aplicação
 var CACHE_NAME = 'Peacy App';
 
+// Verifica se o aplicativo esta esta instalado e renova o Cache
 self.addEventListener('activate', function(event) {
   console.log('[SW] Activate');
   event.waitUntil(
@@ -25,6 +18,8 @@ self.addEventListener('activate', function(event) {
   );
 });
 
+
+// Registra se o Service Worker esta instalado no navegador e criar o Cache da aplicação no Navegador
 self.addEventListener('install', function(event){
   console.log('[SW] Install');
   event.waitUntil(
@@ -38,6 +33,8 @@ self.addEventListener('install', function(event){
   );
 });
 
+
+// Caso exista qualquer atualização em qualquer arquivo online, o service Worker faz uma requisição para o servidor e verifica se existe uma atualização
 self.addEventListener('fetch', function(event) {
   console.log('[SW] fetch ' + event.request.url)
   event.respondWith(

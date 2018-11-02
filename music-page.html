@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang=PT-BR>
-
 <head>
   <meta charset='utf-8'>
   <title>PEACY APP</title>
@@ -57,6 +56,24 @@
       </button>
     </div>
   </div>
-  <script src=/scripts/main.js></script>
+  
+  <!-- O Arquivo main.js esta minificadas para uma maior performance na Web -->
+  <!-- <script src=scripts/main.js></script> -->
+
+  <!-- Nessa parte do codigo registra o Service Worker -->
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        })
+        .then(function (registration) {
+          console.log('Service Worker Registered');
+        });
+
+      navigator.serviceWorker.ready.then(function (registration) {
+        console.log('Service Worker Ready');
+      });
+    }
+  </script>
 </body>
 </html>
